@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVault - Dashboard</title>
+    <link rel="stylesheet" href="style-css.css">
+</head>
+<body class="dashboard-body">
+    <nav class="navbar">
+        <div class="logo">
+            <h2>CryptoVault</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="#">Market</a></li>
+            <li><a href="#">Trade</a></li>
+            <li><a href="#">Wallet</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="user-actions">
+            <div class="notifications">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">3</span>
+            </div>
+            <a href="profile-page.html" class="user-avatar">
+                <img src="/api/placeholder/40/40" alt="User Avatar">
+            </a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#"><span class="menu-icon">📊</span> Overview</a></li>
+                <li><a href="#"><span class="menu-icon">💰</span> Portfolio</a></li>
+                <li><a href="#"><span class="menu-icon">📈</span> Trading</a></li>
+                <li><a href="#"><span class="menu-icon">💱</span> Exchange</a></li>
+                <li><a href="#"><span class="menu-icon">📥</span> Deposits</a></li>
+                <li><a href="#"><span class="menu-icon">📤</span> Withdrawals</a></li>
+                <li><a href="#"><span class="menu-icon">⚙️</span> Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="section-header">
+                <h2>Dashboard Overview</h2>
+                <div class="date-filter">
+                    <span>Filter by: </span>
+                    <select>
+                        <option>Last 24 hours</option>
+                        <option>Last 7 days</option>
+                        <option>Last 30 days</option>
+                        <option>Last 90 days</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="balance-overview">
+                <div class="balance-card total">
+                    <h3>Total Balance</h3>
+                    <p class="balance-amount">$24,631.45</p>
+                    <p class="balance-change positive">+5.24%</p>
+                </div>
+            </div>
+
+            <div class="crypto-grid">
+                <div class="crypto-card">
+                    <div class="crypto-info">
+                        <div class="crypto-icon bitcoin">₿</div>
+                        <div class="crypto-details">
+                            <h4>Bitcoin</h4>
+                            <p class="crypto-ticker">BTC</p>
+                        </div>
+                    </div>
+                    <div class="crypto-values">
+                        <p class="crypto-balance">0.8942 BTC</p>
+                        <p class="crypto-value">$18,452.38</p>
+                        <p class="crypto-change positive">+3.2%</p>
+                    </div>
+                </div>
+
+                <div class="crypto-card">
+                    <div class="crypto-info">
+                        <div class="crypto-icon ethereum">Ξ</div>
+                        <div class="crypto-details">
+                            <h4>Ethereum</h4>
+                            <p class="crypto-ticker">ETH</p>
+                        </div>
+                    </div>
+                    <div class="crypto-values">
+                        <p class="crypto-balance">3.5281 ETH</p>
+                        <p class="crypto-value">$5,123.76</p>
+                        <p class="crypto-change positive">+6.8%</p>
+                    </div>
+                </div>
+
+                <div class="crypto-card">
+                    <div class="crypto-info">
+                        <div class="crypto-icon litecoin">Ł</div>
+                        <div class="crypto-details">
+                            <h4>Litecoin</h4>
+                            <p class="crypto-ticker">LTC</p>
+                        </div>
+                    </div>
+                    <div class="crypto-values">
+                        <p class="crypto-balance">12.3458 LTC</p>
+                        <p class="crypto-value">$824.31</p>
+                        <p class="crypto-change negative">-1.5%</p>
+                    </div>
+                </div>
+
+                <div class="crypto-card">
+                    <div class="crypto-info">
+                        <div class="crypto-icon dogecoin">Đ</div>
+                        <div class="crypto-details">
+                            <h4>Dogecoin</h4>
+                            <p class="crypto-ticker">DOGE</p>
+                        </div>
+                    </div>
+                    <div class="crypto-values">
+                        <p class="crypto-balance">1,432.5 DOGE</p>
+                        <p class="crypto-value">$231.00</p>
+                        <p class="crypto-change positive">+12.4%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="market-overview">
+                <div class="section-header">
+                    <h3>Market Overview</h3>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="market-table-container">
+                    <table class="market-table">
+                        <thead>
+                            <tr>
+                                <th>Asset</th>
+                                <th>Price</th>
+                                <th>24h Change</th>
+                                <th>Market Cap</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="asset-cell">
+                                    <span class="asset-icon bitcoin">₿</span>
+                                    <span class="asset-name">Bitcoin</span>
+                                    <span class="asset-ticker">BTC</span>
+                                </td>
+                                <td>$20,631.45</td>
+                                <td class="positive">+3.2%</td>
+                                <td>$397.5B</td>
+                                <td><button class="trade-btn">Trade</button></td>
+                            </tr>
+                            <tr>
+                                <td class="asset-cell">
+                                    <span class="asset-icon ethereum">Ξ</span>
+                                    <span class="asset-name">Ethereum</span>
+                                    <span class="asset-ticker">ETH</span>
+                                </td>
+                                <td>$1,452.32</td>
+                                <td class="positive">+6.8%</td>
+                                <td>$176.2B</td>
+                                <td><button class="trade-btn">Trade</button></td>
+                            </tr>
+                            <tr>
+                                <td class="asset-cell">
+                                    <span class="asset-icon litecoin">Ł</span>
+                                    <span class="asset-name">Litecoin</span>
+                                    <span class="asset-ticker">LTC</span>
+                                </td>
+                                <td>$67.21</td>
+                                <td class="negative">-1.5%</td>
+                                <td>$4.9B</td>
+                                <td><button class="trade-btn">Trade</button></td>
+                            </tr>
+                            <tr>
+                                <td class="asset-cell">
+                                    <span class="asset-icon dogecoin">Đ</span>
+                                    <span class="asset-name">Dogecoin</span>
+                                    <span class="asset-ticker">DOGE</span>
+                                </td>
+                                <td>$0.16</td>
+                                <td class="positive">+12.4%</td>
+                                <td>$21.5B</td>
+                                <td><button class="trade-btn">Trade</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

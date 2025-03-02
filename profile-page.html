@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVault - User Profile</title>
+    <link rel="stylesheet" href="style-css.css">
+</head>
+<body class="profile-body">
+    <nav class="navbar">
+        <div class="logo">
+            <h2>CryptoVault</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Market</a></li>
+            <li><a href="#">Trade</a></li>
+            <li><a href="#">Wallet</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+        </ul>
+        <div class="user-actions">
+            <div class="notifications">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">3</span>
+            </div>
+            <a href="profile.html" class="user-avatar">
+                <img src="/api/placeholder/40/40" alt="User Avatar">
+            </a>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-sidebar">
+            <div class="user-profile-card">
+                <div class="profile-avatar">
+                    <img src="/api/placeholder/120/120" alt="User Avatar">
+                </div>
+                <h2 class="profile-name">John Satoshi</h2>
+                <p class="profile-email">john.satoshi@example.com</p>
+                <p class="profile-status verified">Verified Account</p>
+                <div class="profile-actions">
+                    <button class="edit-profile-btn">Edit Profile</button>
+                    <button class="security-btn">Security Settings</button>
+                </div>
+            </div>
+            <div class="user-stats">
+                <div class="stat">
+                    <span class="stat-value">34</span>
+                    <span class="stat-label">Trades</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">7</span>
+                    <span class="stat-label">Assets</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">3</span>
+                    <span class="stat-label">Years</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="section-header">
+                <h2>Portfolio Overview</h2>
+                <div class="portfolio-actions">
+                    <button class="portfolio-btn">Download Report</button>
+                    <button class="portfolio-btn">Share Portfolio</button>
+                </div>
+            </div>
+
+            <div class="portfolio-summary">
+                <div class="summary-card">
+                    <h3>Total Value</h3>
+                    <p class="summary-value">$24,631.45</p>
+                    <p class="summary-change positive">+15.24% (30d)</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Monthly Profit</h3>
+                    <p class="summary-value">$1,245.82</p>
+                    <p class="summary-change positive">+8.3% (30d)</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Total Assets</h3>
+                    <p class="summary-value">7</p>
+                    <p class="summary-change neutral">No change (30d)</p>
+                </div>
+            </div>
+
+            <div class="portfolio-distribution">
+                <h3>Portfolio Distribution</h3>
+                <div class="distribution-chart">
+                    <div class="chart-segment bitcoin" style="width: 75%;">
+                        <span class="segment-label">BTC 75%</span>
+                    </div>
+                    <div class="chart-segment ethereum" style="width: 20%;">
+                        <span class="segment-label">ETH 20%</span>
+                    </div>
+                    <div class="chart-segment others" style="width: 5%;">
+                        <span class="segment-label">Others 5%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-assets">
+                <h3>Your Assets</h3>
+                <div class="assets-table-container">
+                    <table class="assets-table">
+                        <thead>
+                            <tr>
+                                <th>Asset</th>
+                                <th>Holdings</th>
+                                <th>Value</th>
+                                <th>Allocation</th>
+                                <th>Profit/Loss</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="asset-cell">
+                                    <span class="asset-icon bitcoin">₿</span>
+                                    <span class="asset-details">
+                                        <span class="asset-name">Bitcoin</span>
+                                        <span class="asset-ticker">BTC</span>
+                                    </span>
+                                </td>
+                                <td>0.8942 BTC</td>
+                                <td>$18,452.38</td>
+                                <td>75%</td>
+                                <td class="positive">+$2,341.28 (+14.5%)</td>
+                                <td class="asset-actions">
+                                    <button class="action-btn buy">Buy</button>
+                                    <button class="action-btn sell">Sell</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="asset-cell">
+                                    <span class="asset-icon ethereum">Ξ</span>
+                                    <span class="asset-details">
+                                        <span class="asset-name">Ethereum</span>
+                                        <span class="asset-ticker">ETH</span>
+                                    </span>
+                                </td>
+                                <td>3.5281 ETH</td>
+                                <td>$5,123.76</td>
+                                <td>20%</td>
+                                <td class="positive">+$782.45 (+18.0%)</td>
+                                <td class="asset-actions">
+                                    <button class="action-btn buy">Buy</button>
+                                    <button class="action-btn sell">Sell</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="asset-cell">
+                                    <span class="asset-icon litecoin">Ł</span>
+                                    <span class="asset-details">
+                                        <span class="asset-name">Litecoin</span>
+                                        <span class="asset-ticker">LTC</span>
+                                    </span>
+                                </td>
+                                <td>12.3458 LTC</td>
+                                <td>$824.31</td>
+                                <td>3%</td>
+                                <td class="negative">-$42.18 (-4.9%)</td>
+                                <td class="asset-actions">
+                                    <button class="action-btn buy">Buy</button>
+                                    <button class="action-btn sell">Sell</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="asset-cell">
+                                    <span class="asset-icon dogecoin">Đ</span>
+                                    <span class="asset-details">
+                                        <span class="asset-name">Dogecoin</span>
+                                        <span class="asset-ticker">DOGE</span>
+                                    </span>
+                                </td>
+                                <td>1,432.5 DOGE</td>
+                                <td>$231.00</td>
+                                <td>2%</td>
+                                <td class="positive">+$45.32 (+24.4%)</td>
+                                <td class="asset-actions">
+                                    <button class="action-btn buy">Buy</button>
+                                    <button class="action-btn sell">Sell</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="transaction-history">
+                <div class="section-header">
+                    <h3>Recent Transactions</h3>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="transactions-table-container">
+                    <table class="transactions-table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Asset</th>
+                                <th>Amount</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="transaction-type buy">Buy</td>
+                                <td>Bitcoin (BTC)</td>
+                                <td>0.125 BTC</td>
+                                <td>$20,450.32</td>
+                                <td>$2,556.29</td>
+                                <td>Feb 28, 2025</td>
+                                <td class="transaction-status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td class="transaction-type sell">Sell</td>
+                                <td>Ethereum (ETH)</td>
+                                <td>0.5 ETH</td>
+                                <td>$1,475.21</td>
+                                <td>$737.61</td>
+                                <td>Feb 26, 2025</td>
+                                <td class="transaction-status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td class="transaction-type buy">Buy</td>
+                                <td>Dogecoin (DOGE)</td>
+                                <td>500 DOGE</td>
+                                <td>$0.158</td>
+                                <td>$79.00</td>
+                                <td>Feb 22, 2025</td>
+                                <td class="transaction-status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td class="transaction-type transfer">Transfer</td>
+                                <td>Bitcoin (BTC)</td>
+                                <td>0.035 BTC</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Feb 18, 2025</td>
+                                <td class="transaction-status pending">Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
